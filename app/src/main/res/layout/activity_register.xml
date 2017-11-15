@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edt_User1"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên đăng nhập"
+        ></EditText>
+
+
+    <EditText
+
+        android:id="@+id/edt_Pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập mật khẩu"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_Pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_aa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="115dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"/>
+</LinearLayout>
