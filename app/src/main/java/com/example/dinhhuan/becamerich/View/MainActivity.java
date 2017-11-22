@@ -1,4 +1,4 @@
-package com.example.dinhhuan.becamerich;
+package com.example.dinhhuan.becamerich.View;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import android.widget.Toast;
 
+import com.example.dinhhuan.becamerich.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         btn_gg= (Button)findViewById(R.id.btn_gg);
         edt_User = (EditText)findViewById(R.id.edt_User);
         edt_Pass = (EditText)findViewById(R.id.edt_Pass);
+        btn_Reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,MainActivity3.class);
+                startActivity(intent);
+            }
+        });
         btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,9 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
 
     private void updateUI(FirebaseUser user) {
     }
